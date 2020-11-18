@@ -13,6 +13,9 @@ pip install -r requirements.txt
 # 新增 .env 檔案
 cp .env-example .env
 
+# 建立資料表
+python3 manage.py migrate
+
 # 啟動伺服器
 python manage.py runserver
 ```
